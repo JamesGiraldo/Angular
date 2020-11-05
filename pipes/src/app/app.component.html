@@ -111,7 +111,15 @@
             </td>
             <td> {{ fecha | date:'MMMM - dd':'':idioma }} </td>
           </tr>
-
+          <tr>
+            <td> {{ nombre }} </td>
+            <td>
+                Contrseña: {{activar}}
+                <br>
+                <button (click)="activar= !activar" class="mr-1 btn btn-outline-info">Activar / Desactivar</button>
+            </td>
+            <td> {{ nombre | contrasena: activar }} </td>
+          </tr>
         </tbody>
       </table> <hr>
       <div class="col mt-3">
@@ -136,6 +144,20 @@
             {{heroe | json}}
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h3 class="">Donseguro</h3>
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <iframe
+            width="560"
+            height="315"
+            [src]="videUrl | domseguro"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
       </div>
     </div>
   </div>
