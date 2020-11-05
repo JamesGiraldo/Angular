@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ContrasenaPipe implements PipeTransform {
 
-  transform(value: string, mostrar: boollean = true): string {
+  transform(value: string, mostrar: boolean = true): string {
     return ( mostrar ) ? '*'.repeat( value.length) : value;
   }
 
