@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background: #2c3135 !important;     
+    background: #2c3135 !important;
     color: white !important;
 }
 
@@ -14,8 +14,11 @@ hr {
 }
 
 .img-circle {
-    border-radius: 100%;
+    border-radius: 50% !important;
     width: 150px;
+}
+.img-thumbnail{
+  /* border-radius: none !important; */
 }
 
 .card-title,
