@@ -17,9 +17,6 @@ hr {
     border-radius: 50% !important;
     width: 150px;
 }
-.img-thumbnail{
-  /* border-radius: none !important; */
-}
 
 .card-title,
 .card-text {
