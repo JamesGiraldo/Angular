@@ -23,6 +23,7 @@ export class DeseosService {
     this.guardarStorage();
     return nuevaLista.id;
   }
+
   // obtener la lista por medio de id
   obtenerLista( id: string | number ){
     id = Number(id);
@@ -30,6 +31,11 @@ export class DeseosService {
     return this.listas.find( listaData => {
       return listaData.id === id;
     });
+  }
+
+  borrarLista( lista: Lista){
+    this.listas = this.listas.filter( listaData => listaData.id !== lista.id);    
+    this.guardarStorage();
   }
   // guardar datos del localStorage
   guardarStorage(){
